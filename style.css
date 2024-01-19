@@ -1,11 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 /* body {
@@ -19,71 +20,73 @@
 } */
 
 .bg-image {
-    background-image: url(images/cafe-image.jpg);
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(images/cafe-image.jpg);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    background-position: center;
+  background-position: center;
 }
 
 .topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 15px 9%;
-    background: rgba(0,0,0,.8);
-    top: 0;
-    left: 0;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 9%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .topnav a {
-    color: #fff;
+  color: #fff;
 }
 
 nav li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0px 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px 20px;
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
-    font-size: 26px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    cursor: pointer;
-    border-radius: 20%;
+.menuBtn {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 45%;
+  padding: 15px 30px;
+}
+
+button a {
+  color: #fff;
 }
 
 .logo {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .navbar a {
-    font-size: 1.7rem;
-    margin-left: 4rem;
+  font-size: 1.7rem;
+  margin-left: 4rem;
 }
 
-.navbar a:hover,
-.navbar a:active {
-    color: blue;
+.navbar a:hover {
+  color: blue;
 }
 
 /* .image {
@@ -94,19 +97,234 @@ button {
     position: relative; 
 } */
 
-.about-us {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 24px;
+  font-weight: 600;
+  color: goldenrod;
+  padding-top: 15px;
+}
+
+.hours .bold {
+  font-weight: 700;
+}
+
+/* .about-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -80px;
 }
 
 .about-container {
-    display: inline-flex;
+  display: inline-flex;
+} */
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 30px 40px;
+    height: 95vh;
 }
 
-.about-container img {
-    width: 490px;
-    height: 500px;
+.image-container img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+}
+
+.text-container {
+    padding-top: 40px;
+}
+
+.text-container span {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.text-container p {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* menu page */
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.menu {
+  font-size: 16px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  color: blue;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+/* .menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+} */
+
+.menu-item-name {
+  font-size: 25px;
+  margin-right: 1.5em;
+}
+
+.menu-item-price {
+  font-size: 25px;
+}
+
+/* .menu-item-text {
+  flex-grow: 1;
+} */
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+/* contact page */
+
+/* .contact h2 {
+    margin-bottom: 3rem;
+} */
+
+/* .contact {
+    background: #1b1e22;
+} */
+
+.contact-img {
+  background-image: url(images/coffee-beans3.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #000;
+  background: #fbf6b4;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.contactBtn {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 10%;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+/* footer */
+
+.page-footer {
+  background: #fbf6b4;
+  padding: 20px 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #212529;
+}
+
+.page-footer p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.social i {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+}
+
+.outer-footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #4b4b4b;
 }
