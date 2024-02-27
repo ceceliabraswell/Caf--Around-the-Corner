@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café Around the Corner</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <!-- <header class="header">
-          
-      </header> -->
-
     <div class="bg-image">
       <div class="container">
-        <div class="topnav">
+        <div class="navbar">
           <a href="home.html" class="logo">Café Around the Corner</a>
-
-          <nav class="navbar">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
 
@@ -42,33 +46,41 @@
 
     <div class="about-us">
       <div class="image-container">
-          <img src="images/coffee-art.jpg" alt="coffee art">
+        <img src="images/coffee-art.jpg" alt="coffee art" />
       </div>
       <div class="text-container">
-          <span>About us</span>
-          <p>Café Around the Corner was established in 2022 by owner Cecelia
-            Braswell. Her goal was to offer premium coffee at an affordable
-            price to early morning commuters. All beans roasted at Café Around
-            the Corner are sourced from shade grown Arabic farms, thus helping to
-            preserve trees and the environment.</p>
-      </div> 
+        <span>About us</span>
+        <p>
+          Café Around the Corner was established in 2022 by owner Cecelia
+          Braswell. Her goal was to offer premium coffee at an affordable price
+          to early morning commuters. All beans roasted at Café Around the
+          Corner are sourced from shade grown Arabic farms, thus helping to
+          preserve trees and the environment.
+        </p>
+      </div>
     </div>
 
     <!-- footer -->
 
     <footer class="page-footer">
       <div class="footer-container">
-          <div class="hours">
-            <h2>Hours of Operation</h2>
-            <p>Monday thru Saturday</p>
-            <p>5:00am - 3:00pm</p>
-          </div>
-          <div class="social">
-            <h2>Social Media Links</h2>
-              <a class="social-icon" href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-              <a class="social-icon" href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-              <a class="social-icon" href="http://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-         </div>
+        <div class="hours">
+          <h2>Hours of Operation</h2>
+          <p>Monday thru Saturday</p>
+          <p>5:00am - 3:00pm</p>
+        </div>
+        <div class="social">
+          <h2>Social Media Links</h2>
+          <a class="social-icon" href="http://instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="social-icon" href="http://facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="social-icon" href="http://twitter.com/"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
       </div>
 
       <div class="outer-footer">
@@ -76,7 +88,6 @@
         <strong>Café Around the Corner ~ 3764 30th St ~ (619) 858-4378.</strong>
       </div>
     </footer>
-
 
     <script src="script.js"></script>
   </body>

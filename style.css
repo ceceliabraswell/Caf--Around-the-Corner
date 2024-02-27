@@ -7,17 +7,8 @@
   border: none;
   outline: none;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  box-sizing: border-box;
 }
-
-/* body {
-    background: url(images/cafe-image.jpg) no-repeat;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} */
 
 .bg-image {
   background-image: url(images/cafe-image.jpg);
@@ -30,7 +21,7 @@
   background-position: center;
 }
 
-.topnav {
+/* .topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +42,66 @@ nav li {
   list-style-type: none;
   padding: 0px 20px;
 }
+
+.navbar a {
+  font-size: 1.7rem;
+  margin-left: 4rem;
+}
+
+.navbar a:hover {
+  color: blue;
+} */
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* new navbar start */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 50px;
+  position: relative;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 3px 0px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 25px;
+}
+
+.nav-links li a {
+  font-size: 1.7rem;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: blue;
+}
+
+/* new navbar ends */
 
 .overlay {
   width: 100%;
@@ -76,27 +127,6 @@ button a {
   color: #fff;
 }
 
-.logo {
-  font-size: 2.5rem;
-}
-
-.navbar a {
-  font-size: 1.7rem;
-  margin-left: 4rem;
-}
-
-.navbar a:hover {
-  color: blue;
-}
-
-/* .image {
-    background: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative; 
-} */
-
 .address {
   display: flex;
   align-items: center;
@@ -111,25 +141,12 @@ button a {
   font-weight: 700;
 }
 
-/* .about-us {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: -80px;
-}
-
-.about-container {
-  display: inline-flex;
-} */
-
 .about-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 30px 40px;
-    height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px 40px;
+  height: 95vh;
 }
 
 .image-container img {
@@ -139,18 +156,18 @@ button a {
 }
 
 .text-container {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .text-container span {
-    font-size: 26px;
-    font-weight: 600;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .text-container p {
-    text-align: justify;
-    font-size: 24px;
-    line-height: 1.5;
+  text-align: justify;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 /* menu page */
@@ -180,15 +197,6 @@ button a {
   padding: 1.5em 0;
 }
 
-@media screen and (min-width: 992px) {
-  .menu {
-    font-size: 16px;
-  }
-  .menu-group {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .menu-item {
   display: flex;
 }
@@ -201,12 +209,6 @@ button a {
   margin-right: 1.5em;
 }
 
-/* .menu-item-heading {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-} */
-
 .menu-item-name {
   font-size: 25px;
   margin-right: 1.5em;
@@ -216,23 +218,9 @@ button a {
   font-size: 25px;
 }
 
-/* .menu-item-text {
-  flex-grow: 1;
-} */
-
 .menu-item-description {
   line-height: 1.6;
 }
-
-/* contact page */
-
-/* .contact h2 {
-    margin-bottom: 3rem;
-} */
-
-/* .contact {
-    background: #1b1e22;
-} */
 
 .contact-img {
   background-image: url(images/coffee-beans3.jpg);
@@ -278,6 +266,7 @@ button a {
   cursor: pointer;
 }
 
+/* remove scroll from input type number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -327,4 +316,50 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 14px;
   color: white;
   background-color: #4b4b4b;
+}
+
+/* breakpoints */
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 25px;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    padding: 25px;
+    top: 100%;
+    left: 0;
+  }
+
+  .nav-links li {
+    padding: 12px 0;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 150px;
+  }
 }
