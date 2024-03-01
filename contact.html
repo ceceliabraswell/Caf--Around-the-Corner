@@ -13,67 +13,69 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <div class="contact-img">
-    <div class="container">
-      <div class="navbar">
-        <a href="home.html" class="logo">Café Around the Corner</a>
-        <div class="toggle-button" id="toggleButton">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">Café Around the Corner</a>
+          <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
       </div>
-    </div>
-    
-    
-    <div class="contact" id="contact">
-      <form id="reset">
-        <div class="input-box">
-          <input type="text" id="name" placeholder="Full Name" required />
-          <input type="email" id="email" placeholder="Email Address" required />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            id="number"
-            placeholder="Phone Number"
-            required
-          />
-          <input
-            type="text"
-            id="subject"
-            placeholder="Email Subject"
-            required
-          />
-        </div>
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input
-          type="submit"
-          value="Send"
-          class="contactBtn"
-          onclick="sendEmail()"
-        />
-      </form>
-    </div>
-    
 
-    <footer class="outer-footer">
-      &copy;
-      <strong>Café Around the Corner ~ 3764 30th St ~ (619) 858-4378.</strong>
-    </footer>
-</div>
+      <div class="contact" id="contact">
+        <form id="reset">
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              id="number"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="text"
+              id="subject"
+              placeholder="Email Subject"
+              required
+            />
+          </div>
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input
+            type="submit"
+            value="Send"
+            class="contactBtn"
+            onclick="sendEmail()"
+          />
+        </form>
+      </div>
+
+      <footer class="outer-footer">
+        &copy;
+        <strong>Café Around the Corner ~ 3764 30th St ~ (619) 858-4378.</strong>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
